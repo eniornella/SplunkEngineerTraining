@@ -40,7 +40,7 @@
  variable "ansible_public_key_path" {
    description = "Path to the Ansible public key file"
    # Replace with your own ansible key pair path
-   default     =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCahwnyOX6ofOedrAnjORU8AarbAgZ7c/644YbuwutHVtSS+5dsXTgg8V/3fZsTdI8YmDFnfXikJbF8v5oh8Q1heZUKr2UysaEla8JxYw16kIu4ZpRHN3/JJQcYT9w14OqtW/AB6DQlWqLqU8T13dJY/a0EdqmMlHiCeQFdu2YcSouiCxS0MYT0R39fulnP9GuEA1kSZ4jl8yyuQLhqCf5UTrBmaqJWCn1Q5nrox3ed0HZSSGOeYmryRUdn3f8tG4MvJcpGpkDhZisz8nwdCXOe2yak4CeL2x7IOCd4rIOeYUvoLaFp2kN42PH8js9xlnDFAp8CKDtnzsq2iMyAhJ6P ansible@ip-172-31-17-102"
+default     =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCahwnyOX6ofOedrAnjORU8AarbAgZ7c/644YbuwutHVtSS+5dsXTgg8V/3fZsTdI8YmDFnfXikJbF8v5oh8Q1heZUKr2UysaEla8JxYw16kIu4ZpRHN3/JJQcYT9w14OqtW/AB6DQlWqLqU8T13dJY/a0EdqmMlHiCeQFdu2YcSouiCxS0MYT0R39fulnP9GuEA1kSZ4jl8yyuQLhqCf5UTrBmaqJWCn1Q5nrox3ed0HZSSGOeYmryRUdn3f8tG4MvJcpGpkDhZisz8nwdCXOe2yak4CeL2x7IOCd4rIOeYUvoLaFp2kN42PH8js9xlnDFAp8CKDtnzsq2iMyAhJ6P ansible@ip-172-31-17-102"
 
  }
 
@@ -149,8 +149,8 @@ variable "tailscale_advertiseTags" {
   default     = "tag:splunk-training"
 }
 
-#  variable "ansible_public_key" {
-#    description = "Public key for the Ansible instance"
-#    default     = "ssh-rsa <ansible_public_key_content>"
-#  }
+ variable "ansible_public_key" {
+   description = "Public key for the Ansible instance"
+   default     = "ssh-rsa <ansible_public_key_content>"
+ }
 
