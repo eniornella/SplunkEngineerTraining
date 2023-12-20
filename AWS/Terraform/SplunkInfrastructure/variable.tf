@@ -34,7 +34,7 @@
  variable "key_pair_name" {
    description = "Key pair name"
    # Replace with your own key pair name e.g "splunk-training"
-   default     = "SplunkTraining"
+   default     = "splunk-training"
  }
 
  variable "ansible_public_key_path" {
@@ -124,7 +124,7 @@ variable "ssh_key_path" {
  variable "domain" {
      description = "Domain Name of the Company"
      # Replace with your own domain name e.g "john.nilipay.com"
-     default = "training.nilipay.com"
+     default = "eni.nilipay.com"
  }
 
  variable "splunk_ports" {

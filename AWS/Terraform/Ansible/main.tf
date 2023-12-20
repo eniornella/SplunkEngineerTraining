@@ -53,7 +53,7 @@ resource "aws_instance" "ansible" {
          connection {
             type        = "ssh"
             user        = "ubuntu"
-            private_key = file("C:\\Users\\leona\\OneDrive\\Desktop\\Training\\Splunk Engineering\\AWS\\SplunkTraining.pem")
+            private_key = file("C:\\Users\\Enior\\downloads\\splunk-training.pem")
             host        = self.public_ip
         }
     }
