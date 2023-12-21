@@ -40,14 +40,14 @@
  variable "ansible_public_key_path" {
    description = "Path to the Ansible public key file"
    # Replace with your own ansible key pair path
-default     =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCahwnyOX6ofOedrAnjORU8AarbAgZ7c/644YbuwutHVtSS+5dsXTgg8V/3fZsTdI8YmDFnfXikJbF8v5oh8Q1heZUKr2UysaEla8JxYw16kIu4ZpRHN3/JJQcYT9w14OqtW/AB6DQlWqLqU8T13dJY/a0EdqmMlHiCeQFdu2YcSouiCxS0MYT0R39fulnP9GuEA1kSZ4jl8yyuQLhqCf5UTrBmaqJWCn1Q5nrox3ed0HZSSGOeYmryRUdn3f8tG4MvJcpGpkDhZisz8nwdCXOe2yak4CeL2x7IOCd4rIOeYUvoLaFp2kN42PH8js9xlnDFAp8CKDtnzsq2iMyAhJ6P ansible@ip-172-31-17-102"
+default     =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmDTPCs2PbkyB68xDQDV2CNWrf/+ueaYie22xSBZhaWsAvat9QLXXnHotJiWV0YpewfY+s4XegYgl2UqH9kM7+IuNuW1uG1BDeW1oBqspD4VZwQ9eeD3HN6GChRd/xJIR3UkYKed5LVYbQ8Um3MKzdbreUv6tQ/qaRX0cLMR+R4DM9Klp6xsqeGD21ZUgu75qzluqpuycfXP4TMjNTkU1MoWD+rd7ULVnmkG741tnMDYpxTcWn9/SnOwOo9PmeIfActvSyCNkSYzzNLtIF/tvVzvABtvIjbINS3SRbu6RylwXr7JjB7oTDB ansible@ip-172-31-29-25"
 
  }
 
 variable "ssh_key_path" {
   description = "Path to the Ansible private key file"
   # Replace with your own key pair path
-  default     =  "C:\\Users\\leona\\OneDrive\\Desktop\\Training\\Splunk Engineering\\AWS\\SplunkTraining.pem"
+  default     =  "C:\\Users\\eni\\Downloads\\splunk-training.pem"
   
 }
  variable "instance_count" {
@@ -147,7 +147,7 @@ variable "tailscale_authKey" {
 variable "tailscale_advertiseTags" {
   description = "Tailscale Advertise Tags"
   # Replace with your own tags e.g "tag:jacob-splunk"
-  default     = "tag:splunk-training"
+  default     = "tag:eni"
 }
 
  variable "ansible_public_key" {
