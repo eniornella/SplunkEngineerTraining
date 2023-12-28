@@ -9,6 +9,15 @@ resource "aws_security_group" "ansible_security_group" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
     }
+   dynamic "ingress" {
+    for_each = var.awx_ports
+    content {
+      from_port   = ingress.value
+      to_port     = ingress.value
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  }
     egress {
     from_port   = 0
     to_port     = 0
@@ -58,7 +67,8 @@ resource "aws_instance" "ansible" {
         }
     }
 
-    # Use file provisioner to copy the public key to the local machine
+    # Use file provisioner to copy the public key to the local machineyes
+    
     # provisioner "file" {
     #     source      = "/home/ansible/.ssh/id_rsa.pub"
     #     destination = "ansible_id_rsa.pub"
