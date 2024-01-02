@@ -22,18 +22,18 @@
 
  variable "key_pair_name" {
    description = "Key pair name"
-   default     = "SplunkTraining"
+   default     = "splunk-training"
  }
 
 variable "awx_hostname" {
   description = "Hostname for the AWX server"
-  default     = "awx"
+  default     = "eni.nilipay.com"
   
 }
 
  variable "domain" {
      description = "Domain Name of the Company"
-     default = "training.nilipay.com"
+     default = "eni.nilipay.com"
  }
 
   variable "awx_ports" {
