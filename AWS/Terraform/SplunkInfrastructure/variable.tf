@@ -40,8 +40,7 @@
  variable "ansible_public_key_path" {
    description = "Path to the Ansible public key file"
    # Replace with your own ansible key pair path
-   default     =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6fj5AIfpyYK/JCbgUNMFZ+hgLssjCWaJaOGL6dfd56oBEbHdoZbyuGKbklLUvprHP6rEJeHUonESITQXva14Q1ItkLS1svXDfK5A9L60KPX/+//gQE9qrWaa2HRS1uqDMR0aZCFzu1rDiYRzNb+ig9NvtKfQMCV2AmQ8Il3h5MdcEagvXLNJzRqIS7oVjC0h4d9sGfTFCiXU63Fv74EuC4IhvGHcIq1WmbrHh78viJaspPRzCNkuhFZuy23F/cySee5sLvqTj5W+9Luo0Owyq6i2kxlgRYGAYuGFzPASIIlhhyZxCLSQ5ijVkSLZoTYoMQ5u8T2mj8IRY1yHY6oE1 ansible@ip-172-31-4-246"
-
+   default     =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6jqQvIlF80iJ2kVOPrKTk990y6ZJnVdmszyezArRlV61sr3AP9wvwRLWPa2JINUtiJsRD22bcYFR2QgIj8h5sXhFutRT1jXMDBa629VQQoqYqKRQ8hknvW3mKwr+cJRBpPKOD9J+fwgHMhmXKn8gsoGS1dZhCAZOA3Odv0Zi+cryBkejIEKtfEcdyF2mEzcEMvK36kr4LsSVDV57yJ1mIh061WR/O4uhQpdz6TojHOjPepNfHsc2fAGf9zh4jAhqY+qlbTwXwAJ9CucwQjj75ERffVyDuwkHuk0nr90KKmsCZVo/BF+NgVF8H0MNJX8AnNznVpDd62AkcE2FQsYKl ansible@ip-172-31-23-224"
  }
 
 variable "ssh_key_path" {
