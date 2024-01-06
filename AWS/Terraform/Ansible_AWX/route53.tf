@@ -1,6 +1,6 @@
 
 data "aws_route53_zone" "training_zone" {
-  name = "training.nilipay.com"
+  name = "eni.nilipay.com"
 
 }
 resource "aws_route53_record" "instance_records" {
