@@ -12,6 +12,12 @@ resource "aws_security_group" "my_security_group" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  ingress {
+    from_port   = -1
+    to_port     = -1
+    protocol    = "icmp"
+  }
+
    dynamic "ingress" {
     for_each = var.splunk_ports
     content {
@@ -73,7 +79,6 @@ resource "aws_instance" "splunk_instances" {
     
     # Install Tailscale
     curl -fsSL https://tailscale.com/install.sh | sh
-    # tailscale up --ssh --authkey="tskey-auth-knCJ6g7CNTRL-9RzpqSxDoGcKttY8bniMHckS8ZDMLVWZZ" --advertise-tags="${var.tailscale_advertiseTags}"
     tailscale up --authkey="${var.tailscale_authKey}" --ssh --reset --advertise-tags="${var.tailscale_advertiseTags}"
 
     # Generate SSH key pair for the splunk_user
