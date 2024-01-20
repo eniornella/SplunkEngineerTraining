@@ -1,4 +1,4 @@
-resource "aws_route53_zone" "training_zone" {
+resource "aws_route53_zone" "eni_zone" {
   # Replace with your own domain name e.g "john.nilipay.com"
     name = "eni.nilipay.com"
 }
@@ -10,7 +10,7 @@ resource "aws_route53_record" "instance_records" {
       i.tags["Name"] => i.public_ip
   }
 
-  zone_id = aws_route53_zone.training_zone.zone_id
+  zone_id = aws_route53_zone.eni_zone.zone_id
   name    = "${each.key}"
   type    = "A"
   ttl     = 60
